@@ -84,16 +84,9 @@ while True:
     # Display
     cv2.imshow('img', img)
 
-
-    imgBonus = cv2.imread('./florence-colgate-england-most-beautiful-face.jpg', 0)
-    # if(img_counter%5 == 0): 
-    #     cv2.imshow('img' , imgBonus)
-
     # Stop if escape key is pressed
     k = cv2.waitKey(30) & 0xff
     if k==27:
-        for element in os.listdir("./StockImagesOpenCV/48x48"):
-            os.remove("./StockImagesOpenCV/48x48/" + element)
         break
         
 # Release the VideoCapture object
